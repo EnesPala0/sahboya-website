@@ -1,0 +1,31 @@
+# Çevresel Değişkenler (Şifreler, API Key'ler) - KESİNLİKLE GİT'E GİTMEMELİ
+.env
+.env.local
+.env.*
+!.env.example
+
+# Veritabanı Dosyaları (Docker'ın oluşturduğu ham dosyalar)
+postgres_data/
+
+# Go Build Çıktıları ve Geçici Dosyalar
+backend/*.exe
+backend/*.exe~
+backend/*.dll
+backend/*.so
+backend/*.dylib
+backend/bin/
+backend/tmp/
+
+# Frontend (Next.js / React) - İlerisi için hazırlık
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/build/
+frontend/dist/
+
+# İşletim Sistemi ve Editör Dosyaları
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.log
