@@ -4,6 +4,7 @@ import (
 	"sahboya-backend/internal/handlers"
 	"sahboya-backend/internal/repository"
 
+	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
 	"gorm.io/gorm"
 )
@@ -13,6 +14,11 @@ import (
 func SetupRouter(dbConn *gorm.DB) *gin.Engine {
 	// Gin motorunu başlat
 	router := gin.Default()
+
+	// CORS Ayarları (Frontend'in Backend'e bağlanabilmesi için hayati önem taşır)
+	// Default ayarı, tüm domainlerden gelen isteklere izin verir.
+	// İleride Canlıya (Production) alırken sadece kendi domainimize izin vereceğiz.
+	router.Use(cors.Default())
 
 	// --- 1. Bağımlılıkları (Katmanları) Başlat ---
 	productRepo := repository.NewProductRepository(dbConn)

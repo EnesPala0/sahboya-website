@@ -29,3 +29,6 @@ frontend/dist/
 .DS_Store
 Thumbs.db
 *.log
+
+# Hassas Ajan Verileri
+.agents/mcp_config.json
