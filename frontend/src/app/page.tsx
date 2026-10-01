@@ -1,9 +1,19 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 
 export default function Home() {
+  const sliderRef = useRef<HTMLDivElement>(null);
+  
+  const scrollLeft = () => {
+    if (sliderRef.current) sliderRef.current.scrollBy({ left: -400, behavior: "smooth" });
+  };
+  
+  const scrollRight = () => {
+    if (sliderRef.current) sliderRef.current.scrollBy({ left: 400, behavior: "smooth" });
+  };
+
   const [alan, setAlan] = useState(45);
   const [kat, setKat] = useState(2);
   const [yuzeyKatsayisi, setYuzeyKatsayisi] = useState(1.0);
@@ -129,12 +139,22 @@ export default function Home() {
             <span className="font-label-sm text-label-sm text-secondary uppercase tracking-widest font-bold block mb-space-xs">Koleksiyonlar</span>
             <h2 className="font-headline-xl text-headline-xl text-primary tracking-tight">Kapsamlı Yüzey & Boya Çözümleri</h2>
           </div>
-          <p className="font-body-md text-body-md text-on-surface-variant max-w-md">
-            Mekanın ihtiyacına göre formüle edilmiş, yüksek pigmentasyon ve kolay sürüm sunan ana kategoriler.
-          </p>
+          <div className="flex items-end gap-6">
+            <p className="font-body-md text-body-md text-on-surface-variant max-w-md hidden lg:block">
+              Mekanın ihtiyacına göre formüle edilmiş, yüksek pigmentasyon ve kolay sürüm sunan ana kategoriler.
+            </p>
+            <div className="hidden md:flex gap-2 shrink-0">
+              <button onClick={scrollLeft} className="w-12 h-12 rounded-full border border-surface-container-high bg-surface-container-lowest text-primary flex items-center justify-center hover:bg-primary hover:text-on-primary transition-all shadow-sm">
+                <span className="material-symbols-outlined text-[24px]">chevron_left</span>
+              </button>
+              <button onClick={scrollRight} className="w-12 h-12 rounded-full border border-surface-container-high bg-surface-container-lowest text-primary flex items-center justify-center hover:bg-primary hover:text-on-primary transition-all shadow-sm">
+                <span className="material-symbols-outlined text-[24px]">chevron_right</span>
+              </button>
+            </div>
+          </div>
         </div>
         
-        <div className="flex overflow-x-auto gap-gutter pb-space-lg snap-x snap-mandatory">
+        <div ref={sliderRef} className="flex overflow-x-auto gap-gutter pb-space-lg snap-x snap-mandatory [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
           
           <Link href="/kategoriler/ic-cephe" className="shrink-0 snap-start w-[85vw] sm:w-[380px] group relative rounded-xl overflow-hidden bg-surface-container-low shadow-sm hover:shadow-xl transition-all duration-300 p-space-lg flex flex-col justify-between h-72">
             <div className="flex items-center justify-between">
