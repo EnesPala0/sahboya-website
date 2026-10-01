@@ -5,30 +5,30 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme {
-  --color-outline-variant: #c0c8cb;
-  --color-surface-bright: #f8f9fa;
-  --color-on-surface: #191c1d;
-  --color-background: #f8f9fa;
+  --color-outline-variant: #c9c5d0;
+  --color-surface-bright: #fcf8ff;
+  --color-on-surface: #1d1b20;
+  --color-background: #fcf8ff;
   --color-surface-container-lowest: #ffffff;
-  --color-on-tertiary-container: #ff9b4a;
+  --color-on-tertiary-container: #31111d;
   --color-on-primary: #ffffff;
-  --color-on-primary-container: #87bbce;
-  --color-primary-container: #0f4c5c;
-  --color-tertiary-fixed: #ffdcc5;
-  --color-surface-container-high: #e7e8e9;
-  --color-on-error-container: #93000a;
-  --color-on-primary-fixed: #001f28;
+  --color-on-primary-container: #370038;
+  --color-primary-container: #ffd6fa;
+  --color-tertiary-fixed: #ffd8e4;
+  --color-surface-container-high: #ece6f0;
+  --color-on-error-container: #410002;
+  --color-on-primary-fixed: #370038;
   --color-error: #ba1a1a;
-  --color-primary: #003441;
-  --color-on-surface-variant: #40484b;
-  --color-surface-container-low: #f3f4f5;
-  --color-secondary-fixed: #ffdbcc;
-  --color-tertiary: #4d2400;
-  --color-secondary-container: #fd7729;
+  --color-primary: #752277; /* Logodaki baskın mor */
+  --color-on-surface-variant: #49454f;
+  --color-surface-container-low: #f7f2fa;
+  --color-secondary-fixed: #ffdad6;
+  --color-tertiary: #7d5260;
+  --color-secondary-container: #ffdad6;
   --color-on-secondary: #ffffff;
-  --color-secondary: #a04100;
-  --color-inverse-primary: #9acee1;
-  --color-inverse-on-surface: #f0f1f2;
+  --color-secondary: #c5382b; /* Logodaki kırmızı/turuncu */
+  --color-inverse-primary: #eeb3ef;
+  --color-inverse-on-surface: #f5eff7;
   --color-inverse-surface: #2e3132;
   --color-surface-tint: #306576;
   --color-surface-container: #edeeef;
@@ -82,46 +82,46 @@
   --text-display-lg-mobile: 36px;
   --text-display-lg-mobile--line-height: 44px;
   --text-display-lg-mobile--letter-spacing: -0.02em;
-  
+
   --text-label-lg: 14px;
   --text-label-lg--line-height: 20px;
-  
+
   --text-label-md: 12px;
   --text-label-md--line-height: 16px;
-  
+
   --text-body-md: 14px;
   --text-body-md--line-height: 20px;
-  
+
   --text-headline-sm: 20px;
   --text-headline-sm--line-height: 28px;
-  
+
   --text-label-sm: 11px;
   --text-label-sm--line-height: 14px;
   --text-label-sm--letter-spacing: 0.04em;
-  
+
   --text-headline-xl-mobile: 28px;
   --text-headline-xl-mobile--line-height: 36px;
-  
+
   --text-display-lg: 56px;
   --text-display-lg--line-height: 64px;
-  
+
   --text-headline-md: 24px;
   --text-headline-md--line-height: 32px;
-  
+
   --text-body-sm: 12px;
   --text-body-sm--line-height: 16px;
-  
+
   --text-body-lg: 16px;
   --text-body-lg--line-height: 24px;
-  
+
   --text-price-display: 24px;
-  
+
   --text-headline-lg: 32px;
   --text-headline-lg--line-height: 40px;
-  
+
   --text-body-xl: 18px;
   --text-body-xl--line-height: 28px;
-  
+
   --text-headline-xl: 40px;
   --text-headline-xl--line-height: 48px;
 
@@ -152,6 +152,7 @@
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-surface text-on-surface font-body-md;
   }
