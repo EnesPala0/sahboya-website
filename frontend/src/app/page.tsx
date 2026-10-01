@@ -271,6 +271,101 @@ export default function Home() {
         </div>
       </section>
 
+      {/* BÖLÜM 3: Çok Satan Ürünler */}
+      <section className="w-full bg-surface-container-lowest py-space-3xl shadow-sm border-y border-surface-container-high">
+        <div className="max-w-[1380px] mx-auto px-gutter">
+          <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-space-md mb-space-2xl">
+            <div>
+              <span className="font-label-sm text-label-sm text-secondary uppercase tracking-widest font-bold block mb-space-xs">Kurumsal Ürün Gamı</span>
+              <h2 className="font-headline-xl text-headline-xl text-primary tracking-tight font-bold">Öne Çıkan Ürünlerimiz</h2>
+            </div>
+            <div className="flex items-center gap-space-xs">
+              <span className="font-label-md text-label-md text-on-surface-variant">Toptan ve perakende doğrudan fabrikadan hızlı fiyat teklifi alın</span>
+            </div>
+          </div>
+          
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
+            
+            <div className="bg-surface rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-200 flex flex-col justify-between p-space-md group border border-transparent hover:border-primary/20">
+              <div className="relative bg-surface-container-low rounded-lg p-space-md flex items-center justify-center h-52 group-hover:bg-surface-container-high transition-colors">
+                <span className="absolute top-2 left-2 bg-primary text-on-primary px-2 py-0.5 rounded font-label-sm text-label-sm font-bold shadow-sm">İç Cephe</span>
+                <img alt="Silikonlu İpek Mat 15L" className="h-44 w-auto object-contain group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIj_LLmNuwKyskeyXhtjR3yHjmtHeFMgxzZkN9rpA14sx6ejX_OREk1hiTVamQc7cfWUNcH_r5HgWd3YCHnp0H0LtVqGixfE-bmBLB29wmVtkSi-FXYtIa3lZMbnABNYZMNOuHOAPEGXxMSX8TzApmg46urpa0dehpquUk72MgmelMNOq-x-Z1pm2aR9w-L4PCTM7WGOIb0jJBET2J9fK5UGoGePr5FvOWUIVPxzLSYEkYjTkviYBW" />
+              </div>
+              <div className="pt-space-md flex flex-col flex-1">
+                <span className="font-headline-sm text-headline-sm text-primary font-bold group-hover:text-secondary transition-colors">Silikonlu İpek Mat 15L</span>
+                <span className="font-body-sm text-body-sm text-on-surface-variant mt-1">Kapatıcılık: ~110-130 m² / İki Kat Tam Örtücülük</span>
+                <div className="mt-space-md p-space-xs bg-surface-container-low rounded font-body-sm text-body-sm text-primary flex items-center gap-1">
+                  <span className="material-symbols-outlined text-[16px] text-secondary">check</span>
+                  <span>Leke Tutmaz & Silinebilir</span>
+                </div>
+                <Link className="mt-space-lg w-full bg-surface-container-lowest hover:bg-primary text-primary hover:text-on-primary border border-primary/30 hover:border-primary py-2.5 rounded-lg font-label-lg text-label-lg transition-all duration-200 flex items-center justify-center gap-space-xs shadow-sm" href="/urunler/1">
+                  <span>Ürünü İncele</span>
+                  <span className="material-symbols-outlined text-[18px]">arrow_forward</span>
+                </Link>
+              </div>
+            </div>
+
+            <div className="bg-surface rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-200 flex flex-col justify-between p-space-md group border border-transparent hover:border-primary/20">
+              <div className="relative bg-surface-container-low rounded-lg p-space-md flex items-center justify-center h-52 group-hover:bg-surface-container-high transition-colors">
+                <span className="absolute top-2 left-2 bg-primary text-on-primary px-2 py-0.5 rounded font-label-sm text-label-sm font-bold shadow-sm">Tavan Serisi</span>
+                <img alt="Süper Tavan Boyası 17.5kg" className="h-44 w-auto object-contain group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIj_LLmNuwKyskeyXhtjR3yHjmtHeFMgxzZkN9rpA14sx6ejX_OREk1hiTVamQc7cfWUNcH_r5HgWd3YCHnp0H0LtVqGixfE-bmBLB29wmVtkSi-FXYtIa3lZMbnABNYZMNOuHOAPEGXxMSX8TzApmg46urpa0dehpquUk72MgmelMNOq-x-Z1pm2aR9w-L4PCTM7WGOIb0jJBET2J9fK5UGoGePr5FvOWUIVPxzLSYEkYjTkviYBW" />
+              </div>
+              <div className="pt-space-md flex flex-col flex-1">
+                <span className="font-headline-sm text-headline-sm text-primary font-bold group-hover:text-secondary transition-colors">Süper Tavan Boyası 17.5kg</span>
+                <span className="font-body-sm text-body-sm text-on-surface-variant mt-1">Ekstra Beyazlık: ~85 m² / İki Kat Yüksek Matlık</span>
+                <div className="mt-space-md p-space-xs bg-surface-container-low rounded font-body-sm text-body-sm text-primary flex items-center gap-1">
+                  <span className="material-symbols-outlined text-[16px] text-secondary">check</span>
+                  <span>Damlama Yapmaz & Nefes Alır</span>
+                </div>
+                <Link className="mt-space-lg w-full bg-surface-container-lowest hover:bg-primary text-primary hover:text-on-primary border border-primary/30 hover:border-primary py-2.5 rounded-lg font-label-lg text-label-lg transition-all duration-200 flex items-center justify-center gap-space-xs shadow-sm" href="/urunler/2">
+                  <span>Ürünü İncele</span>
+                  <span className="material-symbols-outlined text-[18px]">arrow_forward</span>
+                </Link>
+              </div>
+            </div>
+
+            <div className="bg-surface rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-200 flex flex-col justify-between p-space-md group border border-transparent hover:border-primary/20">
+              <div className="relative bg-surface-container-low rounded-lg p-space-md flex items-center justify-center h-52 group-hover:bg-surface-container-high transition-colors">
+                <span className="absolute top-2 left-2 bg-primary text-on-primary px-2 py-0.5 rounded font-label-sm text-label-sm font-bold shadow-sm">Dış Cephe</span>
+                <img alt="Dış Cephe Koruma Boyası 15L" className="h-44 w-auto object-contain group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIj_LLmNuwKyskeyXhtjR3yHjmtHeFMgxzZkN9rpA14sx6ejX_OREk1hiTVamQc7cfWUNcH_r5HgWd3YCHnp0H0LtVqGixfE-bmBLB29wmVtkSi-FXYtIa3lZMbnABNYZMNOuHOAPEGXxMSX8TzApmg46urpa0dehpquUk72MgmelMNOq-x-Z1pm2aR9w-L4PCTM7WGOIb0jJBET2J9fK5UGoGePr5FvOWUIVPxzLSYEkYjTkviYBW" />
+              </div>
+              <div className="pt-space-md flex flex-col flex-1">
+                <span className="font-headline-sm text-headline-sm text-primary font-bold group-hover:text-secondary transition-colors">Dış Cephe Koruma Boyası 15L</span>
+                <span className="font-body-sm text-body-sm text-on-surface-variant mt-1">Silikonlu Akrilik: ~90-110 m² / İklim Koruması</span>
+                <div className="mt-space-md p-space-xs bg-surface-container-low rounded font-body-sm text-body-sm text-primary flex items-center gap-1">
+                  <span className="material-symbols-outlined text-[16px] text-secondary">check</span>
+                  <span>UV ve Nem Kalkanı Teknolojisi</span>
+                </div>
+                <Link className="mt-space-lg w-full bg-surface-container-lowest hover:bg-primary text-primary hover:text-on-primary border border-primary/30 hover:border-primary py-2.5 rounded-lg font-label-lg text-label-lg transition-all duration-200 flex items-center justify-center gap-space-xs shadow-sm" href="/urunler/3">
+                  <span>Ürünü İncele</span>
+                  <span className="material-symbols-outlined text-[18px]">arrow_forward</span>
+                </Link>
+              </div>
+            </div>
+
+            <div className="bg-surface rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-200 flex flex-col justify-between p-space-md group border border-transparent hover:border-primary/20">
+              <div className="relative bg-surface-container-low rounded-lg p-space-md flex items-center justify-center h-52 group-hover:bg-surface-container-high transition-colors">
+                <span className="absolute top-2 left-2 bg-surface-container-highest text-primary px-2 py-0.5 rounded font-label-sm text-label-sm font-bold shadow-sm">Uygulama Seti</span>
+                <img alt="Profesyonel Uygulama Seti" className="h-40 w-auto object-contain group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9_Aqrt-eKi2h2eKwMP_pXCasX3NW6vKUiwu7Ua8SKA0dGYpEB4p7U_zcXohFZYZ5uv7qQBhaLvSWjxV5zb7QcoIr9pwIubMHg7LaQr_QKmGU8fHFoMeB-lpSpmdaNmWQnhp99GduSmsh0W-7l6qymCyLqKXszzmyMxo23uMUiVTsHUSn4rnghE5gIAaLTi78WX3YE17D1PEOX7DrRYpHX9eZBBiv9v-jueVDA_uh1ca_-BVeUuBms" />
+              </div>
+              <div className="pt-space-md flex flex-col flex-1">
+                <span className="font-headline-sm text-headline-sm text-primary font-bold group-hover:text-secondary transition-colors">Profesyonel Uygulama Seti</span>
+                <span className="font-body-sm text-body-sm text-on-surface-variant mt-1">20cm Rulo + Tava + Kestirme Fırçası + Koruma Bandı</span>
+                <div className="mt-space-md p-space-xs bg-surface-container-low rounded font-body-sm text-body-sm text-primary flex items-center gap-1">
+                  <span className="material-symbols-outlined text-[16px] text-secondary">check</span>
+                  <span>Damlama Yapmayan Mikrofiber</span>
+                </div>
+                <Link className="mt-space-lg w-full bg-surface-container-lowest hover:bg-primary text-primary hover:text-on-primary border border-primary/30 hover:border-primary py-2.5 rounded-lg font-label-lg text-label-lg transition-all duration-200 flex items-center justify-center gap-space-xs shadow-sm" href="/urunler/4">
+                  <span>Ürünü İncele</span>
+                  <span className="material-symbols-outlined text-[18px]">arrow_forward</span>
+                </Link>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
       {/* BÖLÜM 5: Boya İhtiyaç Hesaplayıcı (Converted to React) */}
       <section className="w-full py-space-3xl max-w-[1380px] mx-auto px-gutter" id="boya-hesaplayici">
         <div className="bg-surface-container-lowest rounded-2xl shadow-lg p-space-lg lg:p-space-2xl">
