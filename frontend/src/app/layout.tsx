@@ -103,12 +103,104 @@ export default function RootLayout({
 
         {children}
 
-        <footer className="w-full bg-surface-container-lowest text-on-surface border-t border-surface-container-high">
-          <div className="bg-surface-container-low py-space-xl" id="iletisim">
+        <footer className="w-full bg-surface-container-lowest text-on-surface border-t border-surface-container-high mt-space-3xl">
+          {/* CTA Pre-footer */}
+          <div className="bg-surface-container-low py-space-xl border-b border-surface-container-high" id="iletisim">
             <div className="max-w-[1380px] mx-auto px-gutter flex flex-col md:flex-row items-center justify-between gap-space-lg">
               <div>
-                <span className="font-headline-sm text-headline-sm text-primary block font-bold">Doğrudan Üretici İle İletişime Geçin</span>
-                <p className="font-body-md text-body-md text-on-surface-variant mt-space-xs">Şantiye, kurumsal proje veya perakende ihtiyaçlarınız için danışmanlarımızla hemen görüşün.</p>
+                <span className="font-headline-sm text-headline-sm text-primary block font-bold mb-1">Doğrudan Üretici İle İletişime Geçin</span>
+                <p className="font-body-md text-body-md text-on-surface-variant max-w-xl">Şantiye, kurumsal proje veya perakende ihtiyaçlarınız için danışmanlarımızla hemen görüşün. Toptan fiyat teklifi alın.</p>
+              </div>
+              <div className="flex flex-col sm:flex-row gap-space-sm w-full md:w-auto">
+                <a className="bg-[#25D366] hover:bg-[#128C7E] text-white px-space-xl py-3 rounded-xl font-label-lg text-label-lg transition-all shadow-sm hover:shadow-md flex items-center justify-center gap-space-xs font-bold" href="https://wa.me/905335028026" rel="noreferrer" target="_blank">
+                  <span className="material-symbols-outlined text-[20px]">chat</span>
+                  <span>WhatsApp'tan Yazın</span>
+                </a>
+                <a className="bg-primary hover:bg-primary-container text-on-primary px-space-xl py-3 rounded-xl font-label-lg text-label-lg transition-all shadow-sm hover:shadow-md flex items-center justify-center gap-space-xs font-bold" href="tel:+905335028026">
+                  <span className="material-symbols-outlined text-[20px]">call</span>
+                  <span>Hemen Arayın</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          {/* Main Footer Content */}
+          <div className="max-w-[1380px] mx-auto px-gutter py-space-3xl">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-2xl">
+              {/* Brand Info */}
+              <div>
+                <div className="flex items-center gap-2 mb-space-lg">
+                  <div className="w-10 h-10 rounded-xl bg-primary text-on-primary flex items-center justify-center font-bold text-xl leading-none shadow-sm">Ş</div>
+                  <span className="font-headline-md text-headline-md text-primary font-bold tracking-tight">Şah Boya</span>
+                </div>
+                <p className="font-body-sm text-body-sm text-on-surface-variant mb-space-lg leading-relaxed">
+                  Türkiye'nin yenilikçi boya ve yüzey koruma sistemleri üreticisi. Doğa dostu formüller, üstün kapatıcılık ve uzun ömürlü renkler.
+                </p>
+                <div className="flex items-center gap-space-sm text-on-surface-variant">
+                  <a className="w-10 h-10 rounded-full bg-surface-container-low flex items-center justify-center hover:bg-primary hover:text-on-primary transition-all hover:scale-110" href="#" title="Instagram">
+                    <span className="material-symbols-outlined">photo_camera</span>
+                  </a>
+                  <a className="w-10 h-10 rounded-full bg-surface-container-low flex items-center justify-center hover:bg-primary hover:text-on-primary transition-all hover:scale-110" href="#" title="Facebook">
+                    <span className="material-symbols-outlined">thumb_up</span>
+                  </a>
+                  <a className="w-10 h-10 rounded-full bg-surface-container-low flex items-center justify-center hover:bg-primary hover:text-on-primary transition-all hover:scale-110" href="#" title="LinkedIn">
+                    <span className="material-symbols-outlined">work</span>
+                  </a>
+                </div>
+              </div>
+              
+              {/* Quick Links */}
+              <div>
+                <h4 className="font-label-lg text-label-lg text-primary font-bold mb-space-lg">Ürün Grupları</h4>
+                <ul className="flex flex-col gap-space-sm font-body-md text-body-md text-on-surface-variant">
+                  <li><Link className="hover:text-primary hover:underline transition-colors flex items-center gap-1 group" href="#"><span className="material-symbols-outlined text-[16px] text-transparent group-hover:text-secondary transition-colors">chevron_right</span>İç Cephe Boyaları</Link></li>
+                  <li><Link className="hover:text-primary hover:underline transition-colors flex items-center gap-1 group" href="#"><span className="material-symbols-outlined text-[16px] text-transparent group-hover:text-secondary transition-colors">chevron_right</span>Dış Cephe Kaplamaları</Link></li>
+                  <li><Link className="hover:text-primary hover:underline transition-colors flex items-center gap-1 group" href="#"><span className="material-symbols-outlined text-[16px] text-transparent group-hover:text-secondary transition-colors">chevron_right</span>Tavan & Astar Serisi</Link></li>
+                  <li><Link className="hover:text-primary hover:underline transition-colors flex items-center gap-1 group" href="#"><span className="material-symbols-outlined text-[16px] text-transparent group-hover:text-secondary transition-colors">chevron_right</span>Ahşap & Metal Koruyucular</Link></li>
+                  <li><Link className="hover:text-primary hover:underline transition-colors flex items-center gap-1 group" href="#"><span className="material-symbols-outlined text-[16px] text-transparent group-hover:text-secondary transition-colors">chevron_right</span>İzolasyon Malzemeleri</Link></li>
+                </ul>
+              </div>
+              
+              {/* Support */}
+              <div>
+                <h4 className="font-label-lg text-label-lg text-primary font-bold mb-space-lg">Kurumsal</h4>
+                <ul className="flex flex-col gap-space-sm font-body-md text-body-md text-on-surface-variant">
+                  <li><Link className="hover:text-primary hover:underline transition-colors flex items-center gap-1 group" href="#"><span className="material-symbols-outlined text-[16px] text-transparent group-hover:text-secondary transition-colors">chevron_right</span>Hakkımızda</Link></li>
+                  <li><Link className="hover:text-primary hover:underline transition-colors flex items-center gap-1 group" href="#"><span className="material-symbols-outlined text-[16px] text-transparent group-hover:text-secondary transition-colors">chevron_right</span>Kalite Belgelerimiz</Link></li>
+                  <li><Link className="hover:text-primary hover:underline transition-colors flex items-center gap-1 group" href="#"><span className="material-symbols-outlined text-[16px] text-transparent group-hover:text-secondary transition-colors">chevron_right</span>Sürdürülebilirlik</Link></li>
+                  <li><Link className="hover:text-primary hover:underline transition-colors flex items-center gap-1 group" href="#boya-hesaplayici"><span className="material-symbols-outlined text-[16px] text-transparent group-hover:text-secondary transition-colors">chevron_right</span>Boya Hesaplayıcı</Link></li>
+                  <li><Link className="hover:text-primary hover:underline transition-colors flex items-center gap-1 group" href="#iletisim"><span className="material-symbols-outlined text-[16px] text-transparent group-hover:text-secondary transition-colors">chevron_right</span>İletişim</Link></li>
+                </ul>
+              </div>
+              
+              {/* Contact Info */}
+              <div>
+                <h4 className="font-label-lg text-label-lg text-primary font-bold mb-space-lg">İletişim Bilgileri</h4>
+                <ul className="flex flex-col gap-space-md font-body-sm text-body-sm text-on-surface-variant">
+                  <li className="flex gap-space-sm items-start">
+                    <span className="material-symbols-outlined text-[20px] text-secondary shrink-0 mt-0.5">location_on</span>
+                    <span>Atatürk Organize Sanayi Bölgesi<br />Fabrika Cd. No:42, İzmir</span>
+                  </li>
+                  <li className="flex gap-space-sm items-center">
+                    <span className="material-symbols-outlined text-[20px] text-secondary shrink-0">mail</span>
+                    <a className="hover:text-primary hover:underline transition-colors" href="mailto:info@sahboya.com">info@sahboya.com</a>
+                  </li>
+                  <li className="flex gap-space-sm items-center">
+                    <span className="material-symbols-outlined text-[20px] text-secondary shrink-0">schedule</span>
+                    <span>Pzt - Cmt: 08:30 - 18:00</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          
+          {/* Bottom Bar */}
+          <div className="border-t border-surface-container-high py-space-md bg-surface-container-lowest">
+            <div className="max-w-[1380px] mx-auto px-gutter flex flex-col sm:flex-row items-center justify-between gap-space-sm font-label-sm text-label-sm text-on-surface-variant">
+              <span>© {new Date().getFullYear()} Şah Boya Kimya San. Tic. A.Ş. Tüm hakları saklıdır.</span>
+              <div className="flex items-center gap-space-md">
+                <Link className="hover:text-primary hover:underline transition-colors" href="#">Gizlilik Politikası</Link>
+                <Link className="hover:text-primary hover:underline transition-colors" href="#">Kullanım Koşulları</Link>
               </div>
             </div>
           </div>
