@@ -7,8 +7,8 @@ import (
 
 	"sahboya-backend/internal/db"     // db paketini import ediyoruz
 	"sahboya-backend/internal/models" // modelleri import ediyoruz
+	"sahboya-backend/internal/routes" // rotaları import ediyoruz
 
-	"github.com/gin-gonic/gin"
 	"github.com/joho/godotenv"
 )
 
@@ -51,19 +51,10 @@ func main() {
 	}
 	fmt.Println("Tablolar başarıyla eşitlendi!")
 
-	// 3. Gin Router (Yönlendirici) Kurulumu
-	router := gin.Default() // Default router, loglama ve hata kurtarma (recovery) ile gelir
+	// 3. Yönlendiriciyi (Router) routes paketi üzerinden kur
+	router := routes.SetupRouter(dbConn)
 
-	// 4. İlk API Ucumuz (Endpoint): Health Check (Sağlık Kontrolü)
-	// Frontend veya devops araçları sitemizin ayakta olup olmadığını buradan kontrol edebilir.
-	router.GET("/api/health", func(c *gin.Context) {
-		c.JSON(200, gin.H{
-			"status":  "success",
-			"message": "Şah Boya API tıkır tıkır çalışıyor!",
-		})
-	})
-
-	// 5. Sunucuyu Başlat
+	// 4. Sunucuyu Başlat
 	fmt.Printf("Sunucu http://localhost:%s adresinde dinleniyor...\n", port)
 	if err := router.Run(":" + port); err != nil {
 		log.Fatal("Sunucu başlatılamadı:", err)
