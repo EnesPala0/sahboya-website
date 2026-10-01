@@ -5,28 +5,28 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme {
-  --color-outline-variant: #e2e8f0;
+  --color-outline-variant: #cbd5e1;
   --color-surface-bright: #ffffff;
-  --color-on-surface: #0f172a;
+  --color-on-surface: #07101e;
   --color-background: #f8fafc;
   --color-surface-container-lowest: #ffffff;
-  --color-on-tertiary-container: #1e293b;
+  --color-on-tertiary-container: #11203d;
   --color-on-primary: #ffffff;
   --color-on-primary-container: #f8fafc;
-  --color-primary-container: #1e293b;
-  --color-tertiary-fixed: #e2e8f0;
+  --color-primary-container: #11203d;
+  --color-tertiary-fixed: #dbeafe;
   --color-surface-container-high: #f1f5f9;
   --color-on-error-container: #410002;
   --color-on-primary-fixed: #f8fafc;
   --color-error: #ba1a1a;
-  --color-primary: #0f172a; /* Premium tok lacivert/antrasit */
-  --color-on-surface-variant: #475569;
+  --color-primary: #0a1930; /* Premium çok koyu lacivert */
+  --color-on-surface-variant: #3a4b69;
   --color-surface-container-low: #f8fafc;
   --color-secondary-fixed: #ffdae4;
-  --color-tertiary: #334155;
+  --color-tertiary: #1f3050;
   --color-secondary-container: #ffe4ec;
   --color-on-secondary: #ffffff;
-  --color-secondary: #d90077; /* Logodaki efsane Magenta (Sadece Accent olarak) */
+  --color-secondary: #d90077; /* Logodaki efsane Magenta */
   --color-inverse-primary: #94a3b8;
   --color-inverse-on-surface: #f1f5f9;
   --color-inverse-surface: #2e3132;
