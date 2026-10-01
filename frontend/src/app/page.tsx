@@ -491,6 +491,88 @@ export default function Home() {
         </div>
       </section>
 
+      {/* BÖLÜM 7: Müşteri Yorumları (Testimonials) */}
+      <section className="w-full py-space-3xl max-w-[1380px] mx-auto px-gutter" id="musteri-yorumlari">
+        <div className="flex flex-col items-center justify-center text-center mb-space-2xl">
+          <span className="font-label-sm text-label-sm text-secondary uppercase tracking-widest font-bold block mb-space-xs">Başarı Hikayeleri</span>
+          <h2 className="font-headline-xl text-headline-xl text-primary tracking-tight">Ustaların ve Müşterilerin Tercihi</h2>
+          <p className="font-body-md text-body-md text-on-surface-variant max-w-2xl mt-4">
+            Yıllardır duvarları güzelleştiren ustaların ve yaşam alanlarına renk katan müşterilerimizin deneyimleri.
+          </p>
+        </div>
+        
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+          {/* Review 1 */}
+          <div className="bg-surface-container-lowest border border-surface-container-high rounded-2xl p-space-lg shadow-sm hover:shadow-xl transition-all duration-300 relative group flex flex-col justify-between">
+            <div>
+              <div className="flex items-center gap-1 text-[#F59E0B] mb-4">
+                <span className="material-symbols-outlined text-[20px] fill-current">star</span>
+                <span className="material-symbols-outlined text-[20px] fill-current">star</span>
+                <span className="material-symbols-outlined text-[20px] fill-current">star</span>
+                <span className="material-symbols-outlined text-[20px] fill-current">star</span>
+                <span className="material-symbols-outlined text-[20px] fill-current">star</span>
+              </div>
+              <p className="font-body-lg text-body-lg text-primary italic leading-relaxed mb-6 group-hover:text-secondary transition-colors">
+                "20 yıllık boya ustasıyım, Şah Boya'nın silikonlu serisi kadar kapatıcılığı yüksek ve rulo izi bırakmayan bir boya az gördüm. Müşterilerime gönül rahatlığıyla tavsiye ediyorum."
+              </p>
+            </div>
+            <div className="flex items-center gap-space-sm border-t border-surface-container-high pt-4">
+              <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary font-headline-sm font-bold">A.Y</div>
+              <div>
+                <h4 className="font-label-lg text-label-lg text-primary font-bold">Ahmet Yılmaz</h4>
+                <span className="font-body-sm text-body-sm text-on-surface-variant">Profesyonel Boya Ustası</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Review 2 */}
+          <div className="bg-surface-container-lowest border border-surface-container-high rounded-2xl p-space-lg shadow-sm hover:shadow-xl transition-all duration-300 relative group flex flex-col justify-between transform md:-translate-y-4">
+            <div>
+              <div className="flex items-center gap-1 text-[#F59E0B] mb-4">
+                <span className="material-symbols-outlined text-[20px] fill-current">star</span>
+                <span className="material-symbols-outlined text-[20px] fill-current">star</span>
+                <span className="material-symbols-outlined text-[20px] fill-current">star</span>
+                <span className="material-symbols-outlined text-[20px] fill-current">star</span>
+                <span className="material-symbols-outlined text-[20px] fill-current">star</span>
+              </div>
+              <p className="font-body-lg text-body-lg text-primary italic leading-relaxed mb-6 group-hover:text-secondary transition-colors">
+                "Salonumuz için 'Sisli Gri' rengini seçtik. Duvardaki lekeleri tek katta tamamen kapattı ve gerçekten hiç kokusu yok. Dokusu inanılmaz pürüzsüz oldu, silinmesi de çok kolay."
+              </p>
+            </div>
+            <div className="flex items-center gap-space-sm border-t border-surface-container-high pt-4">
+              <div className="w-12 h-12 rounded-full bg-secondary/10 flex items-center justify-center text-secondary font-headline-sm font-bold">Z.K</div>
+              <div>
+                <h4 className="font-label-lg text-label-lg text-primary font-bold">Zeynep Kaya</h4>
+                <span className="font-body-sm text-body-sm text-on-surface-variant">Ev Sahibi</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Review 3 */}
+          <div className="bg-surface-container-lowest border border-surface-container-high rounded-2xl p-space-lg shadow-sm hover:shadow-xl transition-all duration-300 relative group flex flex-col justify-between">
+            <div>
+              <div className="flex items-center gap-1 text-[#F59E0B] mb-4">
+                <span className="material-symbols-outlined text-[20px] fill-current">star</span>
+                <span className="material-symbols-outlined text-[20px] fill-current">star</span>
+                <span className="material-symbols-outlined text-[20px] fill-current">star</span>
+                <span className="material-symbols-outlined text-[20px] fill-current">star</span>
+                <span className="material-symbols-outlined text-[20px] fill-current">star_half</span>
+              </div>
+              <p className="font-body-lg text-body-lg text-primary italic leading-relaxed mb-6 group-hover:text-secondary transition-colors">
+                "Dış cephe projemizde elastik koruma serisini kullandık. İnanılmaz bir su iticiliği var ve güneşe rağmen renklerinde hiç solma yaşamadık. Fiyatına göre performansı muazzam."
+              </p>
+            </div>
+            <div className="flex items-center gap-space-sm border-t border-surface-container-high pt-4">
+              <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary font-headline-sm font-bold">M.C</div>
+              <div>
+                <h4 className="font-label-lg text-label-lg text-primary font-bold">Mustafa Caner</h4>
+                <span className="font-body-sm text-body-sm text-on-surface-variant">Müteahhit</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Toast Notification */}
       <div className={`fixed bottom-6 right-6 z-50 bg-primary text-on-primary px-space-lg py-space-md rounded-xl shadow-2xl flex items-center gap-space-md transform transition-transform duration-300 ${isToastOpen ? 'translate-y-0' : 'translate-y-32'}`}>
         <span className="material-symbols-outlined text-secondary text-[24px]">check_circle</span>
