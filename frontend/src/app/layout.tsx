@@ -103,9 +103,57 @@ export default function RootLayout({
 
         {children}
 
-        <footer className="w-full bg-surface-container-lowest text-on-surface border-t border-surface-container-high mt-space-3xl">
+        <footer className="w-full bg-surface-container-lowest text-on-surface mt-space-3xl">
+          
+          {/* Trust Badges */}
+          <div className="w-full bg-surface-container-lowest pt-space-xl pb-space-lg">
+            <div className="max-w-[1380px] mx-auto px-gutter">
+              <div className="bg-surface-container-lowest rounded-2xl shadow-sm border border-surface-container-high p-space-lg flex flex-col lg:flex-row items-center justify-between gap-space-lg">
+                
+                <div className="flex items-center gap-space-sm flex-1 w-full">
+                  <span className="material-symbols-outlined text-[36px] text-secondary">verified</span>
+                  <div>
+                    <span className="font-headline-sm text-headline-sm text-primary font-bold block">Üretici Garantisi</span>
+                    <span className="font-body-sm text-body-sm text-on-surface-variant">%100 Doğrudan Fabrika Standartı</span>
+                  </div>
+                </div>
+
+                <div className="hidden lg:block w-px h-12 bg-surface-container-high"></div>
+
+                <div className="flex items-center gap-space-sm flex-1 w-full">
+                  <span className="material-symbols-outlined text-[36px] text-secondary">local_shipping</span>
+                  <div>
+                    <span className="font-headline-sm text-headline-sm text-primary font-bold block">Güvenli Özel Sevkiyat</span>
+                    <span className="font-body-sm text-body-sm text-on-surface-variant">Kilitli Teneke & Hasarsız Teslim</span>
+                  </div>
+                </div>
+
+                <div className="hidden lg:block w-px h-12 bg-surface-container-high"></div>
+
+                <div className="flex items-center gap-space-sm flex-1 w-full">
+                  <span className="material-symbols-outlined text-[36px] text-secondary">support_agent</span>
+                  <div>
+                    <span className="font-headline-sm text-headline-sm text-primary font-bold block">Birebir Teknik Destek</span>
+                    <span className="font-body-sm text-body-sm text-on-surface-variant">Mimari Danışma & Renk Analizi</span>
+                  </div>
+                </div>
+
+                <div className="hidden lg:block w-px h-12 bg-surface-container-high"></div>
+
+                <div className="flex items-center gap-space-sm flex-1 w-full">
+                  <span className="material-symbols-outlined text-[36px] text-secondary">handyman</span>
+                  <div>
+                    <span className="font-headline-sm text-headline-sm text-primary font-bold block">Usta ve Şantiye</span>
+                    <span className="font-body-sm text-body-sm text-on-surface-variant">Toplu Metraj Çözümleri</span>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
           {/* CTA Pre-footer */}
-          <div className="bg-surface-container-low py-space-xl border-b border-surface-container-high" id="iletisim">
+          <div className="bg-surface-container-low py-space-xl border-t border-b border-surface-container-high" id="iletisim">
             <div className="max-w-[1380px] mx-auto px-gutter flex flex-col md:flex-row items-center justify-between gap-space-lg">
               <div>
                 <span className="font-headline-sm text-headline-sm text-primary block font-bold mb-1">Doğrudan Üretici İle İletişime Geçin</span>
