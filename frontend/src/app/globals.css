@@ -6,28 +6,28 @@
 
 @theme {
   --color-outline-variant: #c9c5d0;
-  --color-surface-bright: #fcf8ff;
-  --color-on-surface: #1d1b20;
-  --color-background: #fcf8ff;
+  --color-surface-bright: #fffbff;
+  --color-on-surface: #1f1a1d;
+  --color-background: #fffbff;
   --color-surface-container-lowest: #ffffff;
   --color-on-tertiary-container: #31111d;
   --color-on-primary: #ffffff;
-  --color-on-primary-container: #370038;
-  --color-primary-container: #ffd6fa;
+  --color-on-primary-container: #3e0021;
+  --color-primary-container: #ffd9e2;
   --color-tertiary-fixed: #ffd8e4;
   --color-surface-container-high: #ece6f0;
   --color-on-error-container: #410002;
-  --color-on-primary-fixed: #370038;
+  --color-on-primary-fixed: #3e0021;
   --color-error: #ba1a1a;
-  --color-primary: #752277; /* Logodaki baskın mor */
-  --color-on-surface-variant: #49454f;
-  --color-surface-container-low: #f7f2fa;
-  --color-secondary-fixed: #ffdad6;
+  --color-primary: #d10074; /* Yeni logo: Canlı Magenta / Fuşya */
+  --color-on-surface-variant: #4f4549;
+  --color-surface-container-low: #f8f2f5;
+  --color-secondary-fixed: #e2e2e9;
   --color-tertiary: #7d5260;
-  --color-secondary-container: #ffdad6;
+  --color-secondary-container: #4a4a55;
   --color-on-secondary: #ffffff;
-  --color-secondary: #c5382b; /* Logodaki kırmızı/turuncu */
-  --color-inverse-primary: #eeb3ef;
+  --color-secondary: #2c2c35; /* Premium Antrasit / Koyu Arduvaz */
+  --color-inverse-primary: #ffb1c8;
   --color-inverse-on-surface: #f5eff7;
   --color-inverse-surface: #2e3132;
   --color-surface-tint: #306576;
