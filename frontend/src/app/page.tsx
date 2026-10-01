@@ -443,6 +443,54 @@ export default function Home() {
         </div>
       </section>
 
+      {/* BÖLÜM 6: Renk Kartelası ve İlham */}
+      <section className="w-full py-space-3xl max-w-[1380px] mx-auto px-gutter" id="renk-kartelasi">
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-2xl">
+          <div>
+            <span className="font-label-sm text-label-sm text-secondary uppercase tracking-widest font-bold block mb-space-xs">Renk Stüdyosu</span>
+            <h2 className="font-headline-xl text-headline-xl text-primary tracking-tight">Doğadan İlham Alan Renkler</h2>
+          </div>
+          <Link className="inline-flex items-center gap-space-sm text-primary font-label-lg text-label-lg hover:text-secondary transition-colors" href="/renk-kartelasi">
+            <span>Tüm Renk Kartelasını İncele</span>
+            <span className="material-symbols-outlined text-[20px]">arrow_forward</span>
+          </Link>
+        </div>
+        
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+          <div className="lg:col-span-8 bg-surface-container-low rounded-2xl overflow-hidden relative min-h-[400px] group">
+            <img alt="Modern iç mekan tasarımı ve sahte boya renkleri" className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://images.unsplash.com/photo-1598928506311-c55dd580e2cb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
+            <div className="absolute bottom-0 left-0 p-space-xl">
+              <span className="bg-primary/90 text-on-primary px-3 py-1 rounded-full font-label-sm text-label-sm backdrop-blur-sm mb-space-sm inline-block">2026 Trendi</span>
+              <h3 className="font-headline-md text-headline-md text-white mb-2">Kuzeyin Sisli Sabahları: Antrasit & Gri</h3>
+              <p className="font-body-md text-body-md text-white/80 max-w-md">Modern mekanlar için tasarlanmış soğuk alt tonlu gri koleksiyonumuz ile tanışın.</p>
+            </div>
+          </div>
+          
+          <div className="lg:col-span-4 flex flex-col gap-gutter">
+            <div className="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm border border-surface-container-high flex-1 flex flex-col justify-center">
+              <h4 className="font-headline-sm text-headline-sm text-primary mb-space-md">Popüler Tonlar</h4>
+              <div className="grid grid-cols-2 gap-space-sm">
+                <div className="flex items-center gap-space-sm"><div className="w-10 h-10 rounded-full bg-[#E5E0D8] shadow-inner border border-black/5"></div><span className="font-label-md text-label-md text-on-surface">Kum Beji</span></div>
+                <div className="flex items-center gap-space-sm"><div className="w-10 h-10 rounded-full bg-[#8C9295] shadow-inner border border-black/5"></div><span className="font-label-md text-label-md text-on-surface">Sisli Gri</span></div>
+                <div className="flex items-center gap-space-sm"><div className="w-10 h-10 rounded-full bg-[#D4C3B3] shadow-inner border border-black/5"></div><span className="font-label-md text-label-md text-on-surface">Pudra</span></div>
+                <div className="flex items-center gap-space-sm"><div className="w-10 h-10 rounded-full bg-[#4A5D6B] shadow-inner border border-black/5"></div><span className="font-label-md text-label-md text-on-surface">Okyanus</span></div>
+              </div>
+            </div>
+            
+            <div className="bg-primary rounded-2xl p-space-lg text-on-primary flex-1 flex flex-col justify-between group overflow-hidden relative shadow-lg">
+              <div className="absolute -right-4 -bottom-4 opacity-10 group-hover:scale-150 transition-transform duration-700"><span className="material-symbols-outlined text-[120px]">palette</span></div>
+              <h4 className="font-headline-sm text-headline-sm relative z-10">Kendi Rengini Yarat</h4>
+              <p className="font-body-sm text-body-sm text-on-primary/80 mt-2 mb-4 relative z-10">Makinelerimizde binlerce farklı renk seçeneği ile hayalinizdeki tonu anında hazırlıyoruz.</p>
+              <a className="font-label-md text-label-md inline-flex items-center gap-1 hover:gap-2 transition-all relative z-10" href="https://wa.me/905335028026">
+                <span>Renk Uzmanına Danış</span>
+                <span className="material-symbols-outlined text-[16px]">arrow_forward</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Toast Notification */}
       <div className={`fixed bottom-6 right-6 z-50 bg-primary text-on-primary px-space-lg py-space-md rounded-xl shadow-2xl flex items-center gap-space-md transform transition-transform duration-300 ${isToastOpen ? 'translate-y-0' : 'translate-y-32'}`}>
         <span className="material-symbols-outlined text-secondary text-[24px]">check_circle</span>
