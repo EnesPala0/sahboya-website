@@ -52,9 +52,8 @@ export default function RootLayout({
           
           <div className="h-20 max-w-[1380px] mx-auto px-gutter flex items-center justify-between gap-space-lg">
             <div className="flex items-center gap-space-md">
-              <Link className="flex flex-col" href="/">
-                <span className="font-headline-md text-headline-md text-primary tracking-tight font-bold">ŞAH BOYA</span>
-                <span className="font-label-sm text-label-sm text-secondary uppercase tracking-widest">Mimari Yüzey Çözümleri</span>
+              <Link className="flex items-center" href="/">
+                <img src="/logo.png" alt="Şah Boya" className="h-10 object-contain" />
               </Link>
             </div>
             <div className="hidden md:flex flex-1 max-w-lg mx-space-md">
@@ -178,8 +177,7 @@ export default function RootLayout({
               {/* Brand Info */}
               <div>
                 <div className="flex items-center gap-2 mb-space-lg">
-                  <div className="w-10 h-10 rounded-xl bg-primary text-on-primary flex items-center justify-center font-bold text-xl leading-none shadow-sm">Ş</div>
-                  <span className="font-headline-md text-headline-md text-primary font-bold tracking-tight">Şah Boya</span>
+                  <img src="/logo.png" alt="Şah Boya" className="h-12 object-contain" />
                 </div>
                 <p className="font-body-sm text-body-sm text-on-surface-variant mb-space-lg leading-relaxed">
                   Türkiye'nin yenilikçi boya ve yüzey koruma sistemleri üreticisi. Doğa dostu formüller, üstün kapatıcılık ve uzun ömürlü renkler.
